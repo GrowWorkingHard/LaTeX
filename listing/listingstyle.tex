@@ -61,6 +61,31 @@
 %* C                                                                                *%
 %************************************************************************************%
 
+\lstdefinelanguage{cmake}{
+        morekeywords={set,project,configure_file,find_package,message,if,else,endif},
+        sensitive=false,
+        morecomment=[l]{\#},
+        morestring=[b]",
+}
+\lstdefinestyle{cmakeStyle}{
+        language=cmake,
+        style=numbers,
+        style=myFrame,
+        basicstyle=\footnotesize\ttfamily,
+        % keywordstyle=\color{blue}\ttfamily,
+        % stringstyle=\color{red}\ttfamily,
+        % commentstyle=\color{javagreen}\ttfamily,
+        % morecomment=[l][\color{magenta}]{\#},
+        numbers=left,
+        numberstyle=\tiny\color{black},
+        stepnumber=1,
+        numbersep=10pt,
+        tabsize=4,
+        showspaces=false,
+        showstringspaces=false,
+        breaklines=true % sets automatic line breaking
+}
+
 \lstdefinestyle{cppStyle}{
         language=C++,
         style=numbers,
